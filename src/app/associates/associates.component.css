@@ -1,38 +1,105 @@
 
-.card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(10, 9, 9, 0.1);
-    padding: 15px;
-    width: 100%;
-   
-    transition: transform 0.2s, box-shadow 0.2s;
+.profile-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  /* flex: 1; */
+}
 
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info a{
+  /* font-family: Arial, sans-serif; */
+  text-decoration: none;
 }
 
 
- 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.grid-container {
+  display: grid;
+  
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+  margin: 15px;
+
 }
-table{
-    width: 100%;
-    
+
+.grid-container > .profile-card {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  margin: 0;
+  /* border: 1px solid black; */
+  /* text-align: center; */
+  /* font-size: 30px; */
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
- 
-.ratings {
-    font-weight: bold;
-    color: #007BFF;
-  }
-  .reviewstar {
-    color: gold;
-    font-size: 20px;
-    margin-right: 5px;
-  }  
+h1{
+  margin-left: 20px;
+}
 
 
-  select{
-    width: 100%;
-    box-shadow: 2px 2px grey;
-  }
+#myInput {
+  background-image: url('https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+
+.search{
+  display: inline-flex;
+  align-items: center;
+  background-color: rgb(241, 246, 248);
+  color:rgb(19, 18, 18);
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  float: right;
+}
+.search :is(input,button){
+  background:transparent;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+.search input{
+  width: 0;
+  transition: width 0.5s;
+}
+
+.search button{
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+
+
+.searchbutton:hover{
+  color: #e3e3e3;
+}
+
+.search:focus-within input{
+  width: 100%;
+  
+}
+

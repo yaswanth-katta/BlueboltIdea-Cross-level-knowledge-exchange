@@ -1,179 +1,55 @@
-<table>
+<body>
     <div class="row">
-        <div class="col-md-1">
-            <label style="text-align: center;">Sort By</label>
-        </div>
-        <div class="col-md-5">
-            <!-- <label for="cars">Choose Grade</label> -->
-
-            <select name="Grade" id="Grade" class="form-control">
-                <option value="" disabled selected>Choose Grade</option>
-                <option value="PAT">PAT</option>
-                <option value="PA">PA</option>
-                <option value="Associate">Associate</option>
-                <option value="Sr Associate">Sr Associate</option>
-                <option value="Manager">Manager</option>
-                <option value="Sr Manager">Sr Manager</option>
-            </select>
-        </div>
-
         <div class="col-md-6">
-            <!-- <label for="cars">Choose TechStack</label> -->
+            <h1>Users</h1>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4">
+                    <form class="search">
+                        <input type="search" placeholder="search hospital related" class="searchinput" />
+                        <button type="button" class="searchbutton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <select name="Grade" id="Grade" class="form-control">
+                        <option value="" disabled selected>Choose Grade</option>
+                        <option value="PAT">PAT</option>
+                        <option value="PA">PA</option>
+                        <option value="Associate">Associate</option>
+                        <option value="Sr Associate">Sr Associate</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Sr Manager">Sr Manager</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select name="TechStack" id="TechStack" class="form-control">
+                        <option value="" disabled selected>Choose TechStack</option>
+                        <option value="Java-Fullstack">Fullstack</option>
+                        <option value="Java">Java</option>
+                        <option value="angular">angular</option>
+                        <option value="React">React</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <select name="TechStack" id="TechStack" class="form-control">
-                <option value="" disabled selected>Choose TechStack</option>
-                <option value="Java-Fullstack">Fullstack</option>
-                <option value="Java">Java</option>
-                <option value="angular">angular</option>
-                <option value="React">React</option>
-            </select>
+    <div class="grid-container">
+
+        <div *ngFor="let n of numSequence(20)" class="profile-card">
+            <img src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-man-avatar-image-for-profile-png-image_13001882.png" alt="Profile Image"
+                class="profile-image">
+            <div class="profile-info">
+                <a href="#">John Doe</a><br>
+                <small>Software Engineer, Hyderabad</small><br>
+                <b>1032</b><br>
+                <a href="#"><small>java,angular, .net</small></a>
+            </div>
         </div>
 
-        <!-- <div class="col-md-3">
-            <div class="Rating" style="float: right;">
-            <select id="percentage" name="rx" class="form-control" required>
-                <option value="" selected disabled>Filter by Tecnical stack</option>
-                <option value="java">Java</option>
-                <option value="angular">Angualr</option>
-                <option value=".net">.net</option>
+    </div>
 
-                <option *ngFor="let review of allReviews.values()">{{review}}</option>
-            </select>
-        </div> -->
-        <!-- </div> -->
-    </div><br>
-    <tr>
-        <td>
-            <div class="card">
-                <section class="profile">
-
-                    <div class="project-box">
-                        <h5><a href="#">Shiva Raju</a></h5>
-                        <small><b>Description of Project 1...</b></small>
-                    </div>
-                </section>
-                <p>fullStack</p>
-                Experience: 4 years
-                Shift : Morning
-                <div class="ratings">
-                    <span *ngFor="let x of Arr(3).fill(1)" class="reviewstar">&#9733;</span>
-                    <span *ngFor="let x of Arr(5-3).fill(1)" class="reviewstar">&#9734;</span>
-                    <!-- <span class="reviewstar">&#9733;</span>
-                    <span class="reviewstar">&#9733;</span>
-                    <span class="reviewstar">&#9733;</span>
-                    <span class="reviewstar">&#9733;</span>
-                    <span class="reviewstar">&#9733;</span>  -->
-                </div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div class="card">
-                venkatesh
-                <div class="ratings">
-                    <span class="reviewstar">&#9733;</span>
-                    <span class="reviewstar">&#9733;</span>
-                    <span class="reviewstar">&#9733;</span>
-                    <span class="reviewstar">&#9733;</span>
-                    <span class="reviewstar">&#9733;</span> <!-- Example: 5 out of 5 stars -->
-                </div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div class="card">
-                <div class="left-section">
-                    <span class="name">vasavi</span>
-                    <span class="exp">exp: 10 yrs</span>
-                    <span class="domain">domain: Java</span>
-                    <span class="shift">shift: Morning</span>
-                </div>
-                <div class="right-section">
-                    <div class="ratings">
-                        <span *ngFor="let x of Arr(3).fill(1)" class="reviewstar">&#9733;</span>
-                        <span *ngFor="let x of Arr(5-3).fill(1)" class="reviewstar">&#9734;</span>
-                    </div>
-                </div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div class="card">
-                vasavi
-                <div class="ratings">
-                    <span *ngFor="let x of Arr(3).fill(1)" class="reviewstar">&#9733;</span>
-                    <span *ngFor="let x of Arr(5-3).fill(1)" class="reviewstar">&#9734;</span>
-                </div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div class="card">
-                smarani
-                <div class="ratings">
-                    <span *ngFor="let x of Arr(3).fill(1)" class="reviewstar">&#9733;</span>
-                    <span *ngFor="let x of Arr(5-3).fill(1)" class="reviewstar">&#9734;</span>
-                </div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div class="card">
-                sirisha
-                <div class="ratings">
-                    <span *ngFor="let x of Arr(3).fill(1)" class="reviewstar">&#9733;</span>
-                    <span *ngFor="let x of Arr(5-3).fill(1)" class="reviewstar">&#9734;</span>
-                </div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div class="card">
-                harish
-                <div class="ratings">
-                    <span *ngFor="let x of Arr(3).fill(1)" class="reviewstar">&#9733;</span>
-                    <span *ngFor="let x of Arr(5-3).fill(1)" class="reviewstar">&#9734;</span>
-                </div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div class="card">
-                anuradha
-                <div class="ratings">
-                    <span *ngFor="let x of Arr(3).fill(1)" class="reviewstar">&#9733;</span>
-                    <span *ngFor="let x of Arr(5-3).fill(1)" class="reviewstar">&#9734;</span>
-                </div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div class="card">
-                nithya raj
-                <div class="ratings">
-                    <span *ngFor="let x of Arr(3).fill(1)" class="reviewstar">&#9733;</span>
-                    <span *ngFor="let x of Arr(5-3).fill(1)" class="reviewstar">&#9734;</span>
-                </div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div class="card">
-                Ravi kumar
-                <div class="ratings">
-                    <span *ngFor="let x of Arr(3).fill(1)" class="reviewstar">&#9733;</span>
-                    <span *ngFor="let x of Arr(5-3).fill(1)" class="reviewstar">&#9734;</span>
-                </div>
-            </div>
-        </td>
-    </tr>
-</table>
+</body>

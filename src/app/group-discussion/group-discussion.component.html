@@ -1,0 +1,53 @@
+<body>
+    <div class="chat-container">
+        <h2>Group Discussion</h2>
+        <div class="chat-window">
+            <!-- Incomming message -->
+            <div class="container">
+                <div class="incomming-message-box">
+                    <div class="incomming-message">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Friend Avatar">      
+                        <small><a class="profile-name" href="/profile"><b>John Grisham</b></a> Yesterday 10:30AM</small>
+                        <p>Hello world! This is a test message to show how to make an arrow on the side of the box.
+                            Hello sir, how are you? I am fine.</p>
+                        <div class="comment-section">
+                            <div class="comment">
+                                <span class="comment-author">Alice:</span> Great point!
+                                <span><mat-icon style="color: blue;">thumb_up</mat-icon>
+                                    <mat-icon style="color: grey;">thumb_down</mat-icon></span>
+                                
+                                <small><mat-icon class="reply-button">reply</mat-icon></small>
+                            </div>
+                            <!-- Add more comments here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outgoing message -->
+            <div class="container">
+                <div class="outgoing-message-box">
+                    <div class="outgoing-message">
+                        <small><b>You</b> 10:32AM Today</small><br>
+                        <p>Hello world! This is a test message to show how to make an arrow on the side of the box.
+                            Hello sir, how are you? I am fine.</p>
+                        <div class="comment-section">
+                            <div class="comment">
+                                <span class="comment-author">Bob:</span> Agreed!
+                                <button class="like-button">Like</button>
+                                <button class="reply-button">Reply</button>
+                            </div>
+                            <!-- Add more comments here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-input-container">
+            <input type="text" class="message-input" placeholder="Type a message...">
+            <button class="send-button"><mat-icon>send</mat-icon></button>
+        </div>
+    </div>
+</body>

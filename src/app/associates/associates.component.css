@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 
 .profile-card {
   display: grid;
@@ -27,12 +30,13 @@
 
 .grid-container {
   display: grid;
-  
   grid-template-columns: auto auto auto auto;
   gap: 20px;
   /* background-color: #2196F3; */
   padding: 10px;
   margin: 15px;
+  height: 65vh;
+  overflow-y: scroll;
 
 }
 
@@ -102,4 +106,32 @@ h1{
   width: 100%;
   
 }
+.profile-info a:hover{
+  text-decoration: underline 2px rgb(151, 163, 244);
+}
 
+
+
+
+/* Scroll bar  */
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(9, 9, 9); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+  

@@ -1,13 +1,13 @@
 <body>
-    <div class="row">
-        <div class="col-md-6">
+    <div class="row" style="margin-top: 5px;">
+        <div class="col-md-6" >
             <h1>Users</h1>
         </div>
         <div class="col-md-6">
             <div class="row">
                 <div class="col-md-4">
                     <form class="search">
-                        <input type="search" placeholder="search hospital related" class="searchinput" />
+                        <input type="search" placeholder="search User" class="searchinput" />
                         <button type="button" class="searchbutton">
                             <i class="fa fa-search"></i>
                         </button>
@@ -40,13 +40,12 @@
     <div class="grid-container">
 
         <div *ngFor="let n of numSequence(20)" class="profile-card">
-            <img src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-man-avatar-image-for-profile-png-image_13001882.png" alt="Profile Image"
-                class="profile-image">
+            <img src="assets/user avatar.png" alt="Profile Image" class="profile-image">
             <div class="profile-info">
-                <a href="#">John Doe</a><br>
+                <a href="/profile">John Doe</a><br>
                 <small>Software Engineer, Hyderabad</small><br>
                 <b>1032</b><br>
-                <a href="#"><small>java,angular, .net</small></a>
+                <a href="#  "><small>java,angular, .net</small></a>
             </div>
         </div>
 

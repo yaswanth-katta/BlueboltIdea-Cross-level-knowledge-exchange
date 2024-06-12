@@ -1,8 +1,9 @@
 <body>
-  <div class="container">
-    <h2>Streams in Java (Error fixing)</h2>
+  <!-- <div class="container"> -->
+    
     <div class="chat-window">
-      <div class="messages" *ngFor="let n of numSequence(20)">
+      <h2>Streams in Java (Error fixing)</h2>
+      <div class="messages" *ngFor="let n of numSequence(5)">
         <!-- Incomming message -->
         <div class="container">
           
@@ -13,7 +14,7 @@
           <div class="incomming-message-box">
             <div class="incomming-message">
               <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="assets/user avatar.png"
                 alt="Friend Avatar">
               <small style="margin-left: 5px;"><a class="profile-name" href="/profile"><b>John Grisham</b> </a>Yesterday 10:30AM</small>
               <p style="background-color: white;">Hello world! This is a test message to show how to make an
@@ -42,11 +43,12 @@
 
 
     <div class="message-input-container">
-      <input type="text" class="message-input" placeholder="Type a message...">
+      <!-- <input type="text" class="message-input" placeholder="Type a message..."> -->
+      <textarea type="text" class="message-input" placeholder="Type a message..."></textarea>
       <button class="send-button"><mat-icon>send</mat-icon></button>
     </div>
 
-  </div>
+  <!-- </div> -->
 
 
 </body>

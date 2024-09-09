@@ -10,12 +10,13 @@ export class GroupDiscussionComponent implements OnInit {
   ngOnInit(): void {
     this.message = `
     Its went never ending loop!!
-    But i dont know where went wrog, here is the code.
+    But i dont know where went wrong, here is the code.
+    int i=2,n=10;
     while(i<=n){
       if(i%2==0){
-        print even number
+        printf("Even number");
       }else{
-        print odd number
+        printf("Odd number);
       }
     }
     `

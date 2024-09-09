@@ -1,11 +1,15 @@
 <body>
     <div class="chat-window">
-        <h2>Group Discussion</h2>
+        <div class="hearders">
+            <h2>Group Discussion</h2>
+            <input class="search" type="search" placeholder="search comments">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
         <div class="container">
             <div class="incomming-message" *ngFor="let n of numSequence(6)">
                 <img src="assets/user avatar.png" alt="Friend Avatar">
                 <small><a class="profile-name" href="/profile"><b>John Grisham</b>
-                    (Associate)</a>Yesterday
+                        (Associate)</a>Yesterday
                     10:30AM</small>
                 <pre>{{message}}</pre>
             </div>

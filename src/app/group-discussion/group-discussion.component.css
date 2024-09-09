@@ -1,8 +1,5 @@
-
 /* chat window styling */
-body{
-    /* overflow-y: hidden; */
-}
+
 .chat-window {
     width: 100%;
     /* max-width: 600px; */
@@ -15,20 +12,63 @@ body{
 
     display: flex;
     flex-direction: column;
-    height: 70%; /* Make the container fit the whole screen */
-   
-  }
+    height: 70%;
+    /* Make the container fit the whole screen */
 
-  .incomming-message{
+}
+
+/* Style the container for the header elements */
+.hearders {
+    display: flex;
+    align-items: center;
+    /* Vertically center the elements */
+    justify-content: space-between;
+    /* Distribute the elements evenly */
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Style the h2 tag (left side) */
+.hearders h2 {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 20px;
+}
+
+/* Style the search input (right side) */
+.hearders input.search {
+    flex: 1;
+    /* Take up remaining space */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
     
+}
+
+/* Style the search icon (right side) */
+.hearders i.fa-search {
+    font-size: 18px;
+    margin-left: 10px;
+    color: #555;
+}
+
+
+
+
+
+
+
+.incomming-message {
+
     padding: 10px;
     /* border: 1px solid black; */
     /* box-shadow: 0px 1px grey; */
     border-radius: 10px;
     gap: 2px;
-  }
+}
 
-  .incomming-message img{
+.incomming-message img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -37,40 +77,45 @@ body{
     /* display: flex; */
     align-items: center;
     gap: 10px;
-  }
+}
 
-  pre{
+pre {
     border-radius: 2px;
     padding: 5px;
     background-color: white;
     width: 100%;
     object-fit: cover;
-  }
+}
 
-  h2{
+/* h2{
     text-align: center;
-  }
+  } */
 
-   .container{  /*chat container */
+.container {
+    /*chat container */
     /* overflow-y: scroll;
     height: 100%;
     height: 100%; */
 
 
-    flex: 1; /* Take up available space */
-     overflow-y: auto; /*Allow scrolling if content exceeds screen height */
-    padding: 20px; /* Add some padding for spacing */
-  }
+    flex: 1;
+    /* Take up available space */
+    overflow-y: auto;
+    /*Allow scrolling if content exceeds screen height */
+    padding: 20px;
+    /* Add some padding for spacing */
+}
 
-  .container a{
+.container a {
     font-size: 13px;
     text-decoration: none;
-    color:black;
+    color: black;
     padding: 5px;
-  }
-  .container a:hover{
+}
+
+.container a:hover {
     text-decoration: underline 2px rgb(151, 163, 244);
-  }
+}
 
 
 
@@ -85,9 +130,10 @@ body{
     width: 100%;
     background-color: rgb(240, 240, 240);
 
-   
-  }
-  .message-input {
+
+}
+
+.message-input {
     /* flex: 1fr; */
     padding: 10px;
     border: 1px solid #ddd;
@@ -95,25 +141,28 @@ body{
     outline: none;
     font-size: 16px;
     width: 100%;
-    
 
-    
-  }
+
+
+}
 
 /* Send button */
 .send-button {
-  background-color: #007bff; /* Button color */
-  color: #fff;
-  border: none;
-  padding: 5px 12px;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-left: 10px; /* Add some spacing between input and button */
+    background-color: #007bff;
+    /* Button color */
+    color: #fff;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    /* Add some spacing between input and button */
 }
 
 /* Hover effect for the button */
 .send-button:hover {
-  background-color: #0056b3; /* Darker color on hover */
+    background-color: #0056b3;
+    /* Darker color on hover */
 }
 
 
@@ -125,20 +174,19 @@ body{
 /* width */
 ::-webkit-scrollbar {
     width: 1px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(9, 9, 9); 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
-    
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(9, 9, 9);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -15,6 +15,8 @@ import { ConversationComponent } from './conversation/conversation.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { GroupDiscussionComponent } from './group-discussion/group-discussion.component';
+import { OnboardingPrerequisitesComponent } from './onboarding-prerequisites/onboarding-prerequisites.component';
+import { LearingResourcesComponent } from './learing-resources/learing-resources.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { GroupDiscussionComponent } from './group-discussion/group-discussion.co
     ProfileComponent,
     AssociatesComponent,
     ConversationComponent,
-    GroupDiscussionComponent
+    GroupDiscussionComponent,
+    OnboardingPrerequisitesComponent,
+    LearingResourcesComponent
   ],
   imports: [
     BrowserModule,

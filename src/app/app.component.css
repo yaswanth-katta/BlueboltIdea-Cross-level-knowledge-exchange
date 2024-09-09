@@ -257,3 +257,21 @@ img{
   padding: 0px 10px;
   border-radius: 4px;
 }
+
+
+
+.navbar-left a {
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  /* margin-left: 2rem; */
+
+  /* font-size: 1rem; */
+
+}
+
+.navbar-left a:hover {
+  text-decoration: underline;
+}

@@ -148,7 +148,7 @@ h2{
 }
 .message-input {
   flex: 1;
-  text-align: center;
+  /* text-align: center; */
   /* padding: 10px; */
   border: 1px solid #ddd;
   border-radius: 20px;
